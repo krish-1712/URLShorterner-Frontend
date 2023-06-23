@@ -23,7 +23,8 @@
 .Password-wrapper {
   width: 40%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 230px;
+  margin-left: 30px;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
 }
 
 #click {
-  margin-left: 600px;
+  margin-left: 200px;
 }
 
 .add {

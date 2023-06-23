@@ -36,7 +36,8 @@ const Password = () => {
 
 
         const response = await axios.post(`${url}/users/password`, {
-          values,
+          email: values.email,
+          password: values.password,
           token: decodedToken
         });
 

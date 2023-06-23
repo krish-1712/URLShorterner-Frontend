@@ -32,8 +32,9 @@ function URLShortenerForm() {
     <div>
       <Form>
         <Form.Group className="mb-3">
-          <Form.Label>Enter Your URL</Form.Label>
-          <Form.Control type="text" placeholder="eg:https://www.example.com" value={originalURL} onChange={handleInputChange} />
+          <Form.Label style={{"marginTop":"300px","fontSize":"20px","color":"white"}}>Enter Your URL</Form.Label>
+          <Form.Control type="text" placeholder="eg:https://www.example.com"  value={originalURL} onChange={handleInputChange}
+           style={{"width":"40%","marginTop":"10px"}} />
         </Form.Group>
 
         <Button variant="primary" id='click' onClick={handleShortenURL}>
@@ -48,3 +49,7 @@ function URLShortenerForm() {
 }
 
 export default URLShortenerForm;
+
+
+
+
