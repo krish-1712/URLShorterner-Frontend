@@ -25,7 +25,7 @@ function Activation() {
             toast.success(res.data.message)
             navigate('/login')
          } catch (error) {
-          toast.error(error.response.data.message)
+          console.log(error.response.data.message)
           }
         }
         activateAccount();
