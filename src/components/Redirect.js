@@ -21,11 +21,11 @@ function Redirect() {
           navigate(response.data.originalURL);
         } else {
           console.log('Unexpected response:', response);
-          navigate('/login');
+          navigate('/');
         }
       } catch (error) {
         toast.error(error.response.data.message)
-        navigate('/login');
+        navigate('/');
       }
     }
     console.log("testing");

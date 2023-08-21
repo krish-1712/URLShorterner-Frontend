@@ -23,7 +23,7 @@ function Activation() {
             token : decodedToken
           });
             toast.success(res.data.message)
-            navigate('/login')
+            navigate('/')
          } catch (error) {
           console.log(error.response.data.message)
           }

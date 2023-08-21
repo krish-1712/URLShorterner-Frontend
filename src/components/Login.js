@@ -64,7 +64,7 @@ function Login() {
       } catch (error) {
         console.error('Error decoding token:', error);
         sessionStorage.removeItem('token');
-        navigate('/login');
+        navigate('/');
       }
     }
   }, [navigate, token])

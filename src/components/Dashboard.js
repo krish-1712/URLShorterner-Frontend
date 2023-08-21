@@ -29,7 +29,7 @@ const Dashboard = () => {
         if (!token) {
           toast.error("Session Expired. Please Login Again.");
           sessionStorage.clear();
-          navigate('/login');
+          navigate('/');
         } else {
           const response = await axios.get(`${url}/users/1/urlcounts`, {
             headers: { Authorization: `Bearer ${token}` }
@@ -41,7 +41,7 @@ const Dashboard = () => {
       } catch (error) {
         console.error('Error fetching URL counts:', error);
         toast.error(error.response.data.message);
-        navigate('/login');
+        navigate('/');
       }
     };
 
